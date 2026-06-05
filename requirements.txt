@@ -1,0 +1,83 @@
+# =============================================================================
+# requirements.txt — Étude de Cas Marketing Digital SmartMarket
+# Auteur : Fofana Boubacar — Mastère 2 Data & IA
+# =============================================================================
+# Installation : pip install -r requirements.txt
+# Environnement recommandé : Python 3.9+
+# Testé sur : Google Colab (Python 3.10)
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# MANIPULATION ET ANALYSE DES DONNÉES
+# -----------------------------------------------------------------------------
+
+numpy>=1.24.0           # Calculs numériques, tableaux multidimensionnels
+pandas>=2.0.0           # DataFrames, lecture CSV/Excel/JSON, merge, pivot tables
+openpyxl>=3.1.0         # Lecture et écriture de fichiers Excel (.xlsx) — moteur pandas
+
+
+# -----------------------------------------------------------------------------
+# VISUALISATION STATIQUE
+# Utilisé dans les sections 2 (analyses uni/bivariées) et 3 (visualisations métier)
+# -----------------------------------------------------------------------------
+
+matplotlib>=3.7.0       # Graphiques de base : bar charts, histogrammes, scatter plots
+seaborn>=0.12.0         # Heatmaps, visualisations statistiques enrichies (sur matplotlib)
+
+
+# -----------------------------------------------------------------------------
+# VISUALISATION INTERACTIVE
+# Utilisé dans la section 4 (tableau de bord interactif)
+# -----------------------------------------------------------------------------
+
+plotly>=5.15.0          # Graphiques interactifs : bar, scatter, funnel, imshow (heatmap)
+
+
+# -----------------------------------------------------------------------------
+# TABLEAU DE BORD INTERACTIF
+# Utilisé dans la section 4 pour l'application app.py
+# -----------------------------------------------------------------------------
+
+streamlit>=1.28.0       # Framework de dashboard web en Python
+                        # Lance le serveur avec : streamlit run app.py
+
+
+# -----------------------------------------------------------------------------
+# WIDGETS INTERACTIFS EN NOTEBOOK
+# Utilisé dans la section 4 pour les filtres dynamiques dans Jupyter/Colab
+# -----------------------------------------------------------------------------
+
+ipywidgets>=8.0.0       # Dropdowns, sliders et outputs interactifs dans Jupyter Notebook
+
+
+# -----------------------------------------------------------------------------
+# EXPOSITION DU DASHBOARD (GOOGLE COLAB UNIQUEMENT)
+# Permet de rendre l'application Streamlit accessible via une URL publique
+# depuis un environnement sans accès direct au port localhost
+# -----------------------------------------------------------------------------
+
+pyngrok>=6.0.0          # Tunnel HTTP vers ngrok — nécessite un compte et un token ngrok
+                        # Non requis pour une exécution locale classique
+
+
+# =============================================================================
+# NOTES D'INSTALLATION PAR ENVIRONNEMENT
+# =============================================================================
+#
+# --- Google Colab (recommandé pour ce projet) ---
+#   !pip install -r requirements.txt
+#   Note : numpy, pandas, matplotlib, seaborn sont déjà pré-installés sur Colab.
+#   Seuls streamlit, pyngrok et plotly nécessitent une installation manuelle.
+#
+# --- Environnement local (venv ou conda) ---
+#   python -m venv venv
+#   source venv/bin/activate        # Linux/macOS
+#   venv\Scripts\activate           # Windows
+#   pip install -r requirements.txt
+#
+# --- Jupyter Notebook local ---
+#   Après installation, activer les widgets :
+#   jupyter nbextension enable --py widgetsnbextension
+#
+# =============================================================================
