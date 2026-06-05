@@ -1,12 +1,10 @@
-# 📊 Étude de Cas — Analyse Marketing Digital SmartMarket
+#  Étude de Cas — Analyse Marketing Digital SmartMarket
 
-**Auteur :** Fofana Boubacar  
-**Formation :** Mastère 2 Data & IA  
 **Contexte :** Analyse complète des performances de campagnes marketing digitales pour l'entreprise fictive SmartMarket.
 
 ---
 
-## 📋 Description du projet
+##  Description du projet
 
 Ce projet constitue une étude de cas appliquée en marketing digital. Il couvre l'ensemble du pipeline analytique, depuis l'ingestion et le nettoyage des données jusqu'à la production d'un tableau de bord interactif destiné aux décideurs métier.
 
@@ -14,7 +12,7 @@ L'objectif est de répondre à une problématique business : **quels canaux, dev
 
 ---
 
-## 🗂️ Sources de données
+##  Sources de données
 
 Le projet exploite trois fichiers de données complémentaires :
 
@@ -28,7 +26,7 @@ Ces trois sources sont fusionnées (merge) sur les clés `lead_id` et `channel` 
 
 ---
 
-## 🏗️ Structure du notebook
+##  Structure du notebook
 
 ### 1. Prétraitement et Nettoyage des données
 - Chargement des trois sources (CSV, Excel, JSON)
@@ -73,7 +71,7 @@ Chaque graphique répond à une question métier explicite :
 
 ---
 
-## 🔑 Principaux enseignements métier
+##  Principaux enseignements métier
 
 - **Instagram Ads** affiche le meilleur ratio conversions/coût (210 conversions pour 1 800 €)
 - **Le mobile** est le device dominant sur l'ensemble des canaux — stratégie mobile-first recommandée
@@ -84,7 +82,7 @@ Chaque graphique répond à une question métier explicite :
 
 ---
 
-## 🚀 Lancement du Dashboard
+##  Lancement du Dashboard
 
 Le tableau de bord Streamlit est conçu pour tourner dans **Google Colab** avec ngrok :
 
@@ -110,7 +108,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Fichiers du projet
+##  Fichiers du projet
 
 ```
 ├── Etude_de_cas_marketing_digital.ipynb   # Notebook principal
@@ -126,7 +124,7 @@ streamlit run app.py
 
 ---
 
-## ⚠️ Notes importantes
+##  Notes importantes
 
 - Le notebook est optimisé pour **Google Colab** — les chemins de fichiers commencent par `/content/`
 - Pour une exécution locale, adapter les chemins d'accès aux fichiers CSV/Excel/JSON
